@@ -227,7 +227,9 @@ for index, hotel in recommended_hotels.iterrows():
 
 # Öneri yapma
 st.subheader("ADVICED FEATURES")
-for _, hotel in df.iterrows():
+for index, hotel in recommended_hotels.iterrows():
+    if index >= 3:
+        break
     col1, col2, col3, col4, col5 = st.columns([2,1,1,1,1])
 
     hotel_name = hotel['hotel_name_x'].upper()
