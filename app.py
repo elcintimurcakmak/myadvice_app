@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 import os
 
-df = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx")
+#df = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx")
 hotel = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx", sheet_name="hotel")
 ratings = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx", sheet_name="ratings")
 
