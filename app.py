@@ -21,7 +21,7 @@ st.set_page_config(
 
 #SIDEBAR MYADVICE LOGOSU EKLEME
 from PIL import Image
-image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotels/nese7.png"
+image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/nese7.png"
 image = Image.open(image_path)
 st.sidebar.image(image, use_column_width=True)
 
@@ -69,7 +69,7 @@ hotel_12 = st.sidebar.checkbox("Hotel Cocco Bello in der Villa Foret", key="hote
 ######################################################################################################
 #################################SAĞ ÜST BANNER#######################################################
 ######################################################################################################
-image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotels/banner_2.jpg"
+image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/banner_2.jpg"
 image = Image.open(image_path)
 #st.image(image, caption='Ludwigsburg', use_column_width=True)
 st.image(image, use_column_width=True)
@@ -77,7 +77,7 @@ st.image(image, use_column_width=True)
 ######################################################################################################
 #################################SAĞ ORTA BANNER######################################################
 ######################################################################################################
-image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotels/sub_banner.jpg"
+image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/sub_banner.jpg"
 image = Image.open(image_path)
 #st.image(image, caption='Ludwigsburg', use_column_width=True)
 st.image(image, use_column_width=True)
@@ -96,13 +96,13 @@ from PIL import Image
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/garni_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/garni_hotel.jpg"
     elif hotel_name == "Hotel Moerike":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/morike_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/morike_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
     else:
         return None
 
@@ -128,13 +128,13 @@ if hotel_1:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel City Oase Lb":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/oase_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/oase_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
     else:
         return None
 
@@ -161,21 +161,19 @@ if hotel_2:
 ###########################################HOTEL3#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-<<<<<<< HEAD
+
     if hotel_name == "Hotel Riviera":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/riviera.jpg"
-=======
-    if hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
->>>>>>> d489234bb533c7bb3734dab1bf1f235d603abd36
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/westend_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
     elif hotel_name == "Komfort Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/komfort_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/komfort_hotel.jpg"
     else:
         return None
 
@@ -202,13 +200,13 @@ if hotel_3:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-            return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
     elif hotel_name == "Gastehaus Siebenschlafer":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/siebenschlafer_gastehaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/siebenschlafer_gastehaus.jpg"
     else:
         return None
 
@@ -234,13 +232,13 @@ if hotel_4:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel-Restaurant Poseidon":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/poseidon_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/poseidon_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/garni_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/garni_hotel.jpg"
     else:
         return None
 
@@ -266,13 +264,13 @@ if hotel_5:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
     elif hotel_name == "Best Western Hotel Favorit":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bestwestern_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bestwestern_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
     else:
         return None
 
@@ -300,13 +298,13 @@ if hotel_6:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
     elif hotel_name == "Gastehaus Im Osterholz":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/osterholz_gastehaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel-Restaurant Poseidon":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/poseidon_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/poseidon_hotel.jpg"
     else:
         return None
 
@@ -333,13 +331,13 @@ if hotel_7:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Krauthof":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/krauthof_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/krauthof_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
     else:
         return None
 
@@ -366,13 +364,13 @@ if hotel_8:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Moerike":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/morike_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/morike_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/krauthof_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/krauthof_hotel.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/cocco_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -398,13 +396,13 @@ if hotel_9:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/cocco_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/westend_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
     else:
         return None
 
@@ -430,13 +428,13 @@ if hotel_10:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
     else:
         return None
 
@@ -462,13 +460,13 @@ if hotel_11:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/westend_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
     else:
         return None
 
