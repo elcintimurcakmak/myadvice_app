@@ -132,6 +132,32 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
