@@ -4,9 +4,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 import os
 
-#df = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx")
-hotel = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx", sheet_name="hotel")
-ratings = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx", sheet_name="ratings")
+#df = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/raw/main/hotel_info.xlsx")
+hotel = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/raw/main/hotel_info.xlsx", sheet_name="hotel")
+ratings = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/raw/main/hotel_info.xlsx", sheet_name="ratings")
 
 df_ = pd.merge(hotel, ratings, how="inner", on=["hotel_id"])
 df = df_.copy()
@@ -20,10 +20,24 @@ st.set_page_config(
     initial_sidebar_state="auto")
 
 #SIDEBAR MYADVICE LOGOSU EKLEME
+#from PIL import Image
+#image_path = "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nese7.png"
+#image = Image.open(image_path)
+#st.sidebar.image(image, use_column_width=True)
+
 from PIL import Image
-image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/nese7.png"
-image = Image.open(image_path)
+import requests
+from io import BytesIO
+
+# Görselin URL'sini belirtin
+url = 'https://github.com/elcintimurcakmak/myadvice_app/raw/main/nese7.png'
+
+# URL üzerinden görseli indirin
+response = requests.get(url)
+image = Image.open(BytesIO(response.content))
 st.sidebar.image(image, use_column_width=True)
+
+
 
 
 st.sidebar.write("<h3></h3>", unsafe_allow_html=True)
@@ -46,7 +60,7 @@ def content_based_recommender(hotel_name, cosine_sim, dataframe):
     similarity_scores = similarity_scores.sort_values("scores", ascending=False)
     recommended_indices = similarity_scores[similarity_scores["hotel_index"] != hotel_index]["hotel_index"]
     recommended_hotels = dataframe.loc[recommended_indices, :]
-    return recommended_hotels['hotel_name_x'].unique()[1:5]
+    return recommended_hotels['hotel_name_x'].unique()[:5]
 
 def recommended_hotels(hotel_name):
     cosine_sim = calculate_cosine_sim(df)
@@ -69,19 +83,34 @@ hotel_12 = st.sidebar.checkbox("Hotel Cocco Bello in der Villa Foret", key="hote
 ######################################################################################################
 #################################SAĞ ÜST BANNER#######################################################
 ######################################################################################################
-image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/banner_2.jpg"
-image = Image.open(image_path)
+#image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/banner_2.jpg"
+#image = Image.open(image_path)
 #st.image(image, caption='Ludwigsburg', use_column_width=True)
+#st.image(image, use_column_width=True)
+
+# Görselin URL'sini belirtin
+url = 'https://github.com/elcintimurcakmak/myadvice_app/raw/main/banner_2.jpg'
+
+# URL üzerinden görseli indirin
+response = requests.get(url)
+image = Image.open(BytesIO(response.content))
 st.image(image, use_column_width=True)
 
 ######################################################################################################
 #################################SAĞ ORTA BANNER######################################################
 ######################################################################################################
-image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/sub_banner.jpg"
-image = Image.open(image_path)
+#image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/sub_banner.jpg"
+#image = Image.open(image_path)
 #st.image(image, caption='Ludwigsburg', use_column_width=True)
-st.image(image, use_column_width=True)
+#st.image(image, use_column_width=True)
 
+# Görselin URL'sini belirtin
+url = 'https://github.com/elcintimurcakmak/myadvice_app/raw/main/sub_banner.jpg'
+
+# URL üzerinden görseli indirin
+response = requests.get(url)
+image = Image.open(BytesIO(response.content))
+st.image(image, use_column_width=True)
 
 import streamlit as st
 from PIL import Image
@@ -96,15 +125,23 @@ from PIL import Image
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/garni_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
     elif hotel_name == "Hotel Moerike":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/morike_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
     else:
         return None
+
+# Görselin URL'sini belirtin
+#url = 'https://github.com/elcintimurcakmak/myadvice_app/raw/main/sub_banner.jpg'
+
+# URL üzerinden görseli indirin
+#response = requests.get(url)
+#image = Image.open(BytesIO(response.content))
+
 
 if hotel_1:
     result = recommended_hotels("Best Western Hotel Favorit")
@@ -117,7 +154,9 @@ if hotel_1:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -128,13 +167,13 @@ if hotel_1:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel City Oase Lb":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/oase_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
     else:
         return None
 
@@ -150,7 +189,9 @@ if hotel_2:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -163,17 +204,17 @@ if hotel_2:
 def get_image_path(hotel_name):
 
     if hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
     elif hotel_name == "Komfort Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/komfort_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
     else:
         return None
 
@@ -188,7 +229,9 @@ if hotel_3:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -200,13 +243,13 @@ if hotel_3:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
     elif hotel_name == "Gastehaus Siebenschlafer":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/siebenschlafer_gastehaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
     else:
         return None
 
@@ -221,7 +264,9 @@ if hotel_4:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -232,13 +277,13 @@ if hotel_4:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel-Restaurant Poseidon":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/poseidon_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/garni_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
     else:
         return None
 
@@ -253,7 +298,9 @@ if hotel_5:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -264,13 +311,13 @@ if hotel_5:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "Best Western Hotel Favorit":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bestwestern_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
     else:
         return None
 
@@ -285,7 +332,9 @@ if hotel_6:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -298,13 +347,13 @@ if hotel_6:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
     elif hotel_name == "Gastehaus Im Osterholz":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/osterholz_gastehaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel-Restaurant Poseidon":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/poseidon_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
     else:
         return None
 
@@ -319,7 +368,9 @@ if hotel_7:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            #image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -331,13 +382,13 @@ if hotel_7:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Krauthof":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/krauthof_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
     else:
         return None
 
@@ -352,7 +403,9 @@ if hotel_8:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            # image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -364,13 +417,13 @@ if hotel_8:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Moerike":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/morike_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/krauthof_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/cocco_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -385,7 +438,9 @@ if hotel_9:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            # image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -396,13 +451,13 @@ if hotel_9:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/cocco_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
     else:
         return None
 
@@ -417,7 +472,9 @@ if hotel_10:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            # image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -428,13 +485,13 @@ if hotel_10:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     else:
         return None
 
@@ -449,7 +506,9 @@ if hotel_11:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            # image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
@@ -460,13 +519,13 @@ if hotel_11:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     else:
         return None
 
@@ -481,7 +540,9 @@ if hotel_12:
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
-            image = Image.open(image_path)
+            # image = Image.open(image_path)
+            response = requests.get(image_path)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=hotel, use_column_width=True)
         else:
             st.write("No image available")
