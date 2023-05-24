@@ -46,7 +46,7 @@ def content_based_recommender(hotel_name, cosine_sim, dataframe):
     similarity_scores = similarity_scores.sort_values("scores", ascending=False)
     recommended_indices = similarity_scores[similarity_scores["hotel_index"] != hotel_index]["hotel_index"]
     recommended_hotels = dataframe.loc[recommended_indices, :]
-    return recommended_hotels['hotel_name_x'].unique()[1:5]
+    return recommended_hotels['hotel_name_x'].unique()[:5]
 
 def recommended_hotels(hotel_name):
     cosine_sim = calculate_cosine_sim(df)
@@ -112,15 +112,13 @@ if hotel_1:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
         st.markdown("---")
 
 ########################################################################################################
@@ -145,15 +143,14 @@ if hotel_2:
 
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 
@@ -161,8 +158,8 @@ if hotel_2:
 ###########################################HOTEL3#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel Riviera":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/riviera.jpg"
+    if hotel_name == "City Hotel Ludwigsburg":
+        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
         return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/westend_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
@@ -176,19 +173,18 @@ def get_image_path(hotel_name):
 
 if hotel_3:
     result = recommended_hotels("City Hotel Ludwigsburg")
-    result = [hotel for hotel in result if hotel != "City Hotel Ludwigsburg"]
+    result = [hotel for hotel in result if hotel != "City Hotel"]
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 
@@ -213,15 +209,14 @@ if hotel_4:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 #########################################################################################################
@@ -245,15 +240,14 @@ if hotel_5:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 #########################################################################################################
@@ -277,15 +271,14 @@ if hotel_6:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 
@@ -311,15 +304,14 @@ if hotel_7:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 
@@ -344,15 +336,14 @@ if hotel_8:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 
@@ -377,15 +368,14 @@ if hotel_9:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 #########################################################################################################
@@ -409,15 +399,14 @@ if hotel_10:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 #########################################################################################################
@@ -441,15 +430,14 @@ if hotel_11:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
+
         st.markdown("---")
 
 #########################################################################################################
@@ -473,15 +461,13 @@ if hotel_12:
     st.markdown("### Recommended Hotels")
 
     for i, hotel in enumerate(result, start=1):
-        col1, col2, col3, col4, col5 = st.columns([3,1,1,1,1])
+        col1, col2, col3 = st.columns([3,1,8])
         col1.markdown(f"<b>Name:</b> {hotel}", unsafe_allow_html=True)
         image_path = get_image_path(hotel)  # Otelin fotoğraf yolunu alın
 
         if image_path is not None:
             image = Image.open(image_path)
-            st.image(image, caption=hotel, use_column_width=True)
-        else:
-            st.write("No image available")
+            col3.image(image, caption=hotel, use_column_width=True)
         st.markdown("---")
 
 
