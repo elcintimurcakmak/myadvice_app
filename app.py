@@ -4,9 +4,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 import os
 
-df = pd.read_excel("C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hotel_info.xlsx")
-hotel = pd.read_excel("C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hotel_info.xlsx", sheet_name="hotel")
-ratings = pd.read_excel("C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hotel_info.xlsx", sheet_name="ratings")
+df = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx")
+hotel = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx", sheet_name="hotel")
+ratings = pd.read_excel("https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotel_info.xlsx", sheet_name="ratings")
 
 df_ = pd.merge(hotel, ratings, how="inner", on=["hotel_id"])
 df = df_.copy()
@@ -21,7 +21,7 @@ st.set_page_config(
 
 #SIDEBAR MYADVICE LOGOSU EKLEME
 from PIL import Image
-image_path = "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/nese7.png"
+image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotels/nese7.png"
 image = Image.open(image_path)
 st.sidebar.image(image, use_column_width=True)
 
@@ -69,7 +69,7 @@ hotel_12 = st.sidebar.checkbox("Hotel Cocco Bello in der Villa Foret", key="hote
 ######################################################################################################
 #################################SAĞ ÜST BANNER#######################################################
 ######################################################################################################
-image_path = "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/banner_2.jpg"
+image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotels/banner_2.jpg"
 image = Image.open(image_path)
 #st.image(image, caption='Ludwigsburg', use_column_width=True)
 st.image(image, use_column_width=True)
@@ -77,7 +77,7 @@ st.image(image, use_column_width=True)
 ######################################################################################################
 #################################SAĞ ORTA BANNER######################################################
 ######################################################################################################
-image_path = "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/sub_banner.jpg"
+image_path = "https://github.com/elcintimurcakmak/myadvice_app/blob/main/hotels/sub_banner.jpg"
 image = Image.open(image_path)
 #st.image(image, caption='Ludwigsburg', use_column_width=True)
 st.image(image, use_column_width=True)
@@ -96,13 +96,13 @@ from PIL import Image
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/garni_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/garni_hotel.jpg"
     elif hotel_name == "Hotel Moerike":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/morike_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/morike_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
     else:
         return None
 
@@ -128,13 +128,13 @@ if hotel_1:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel City Oase Lb":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/oase_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/oase_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
     else:
         return None
 
@@ -162,15 +162,15 @@ if hotel_2:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "City Hotel Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/westend_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
     elif hotel_name == "Komfort Hotel Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/komfort_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/komfort_hotel.jpg"
     else:
         return None
 
@@ -197,13 +197,13 @@ if hotel_3:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-            return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/city_hotel.jpg"
+            return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
     elif hotel_name == "Gastehaus Siebenschlafer":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/siebenschlafer_gastehaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/siebenschlafer_gastehaus.jpg"
     else:
         return None
 
@@ -229,13 +229,13 @@ if hotel_4:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel-Restaurant Poseidon":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/poseidon_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/poseidon_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/garni_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/garni_hotel.jpg"
     else:
         return None
 
@@ -261,13 +261,13 @@ if hotel_5:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Riviera":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
     elif hotel_name == "Best Western Hotel Favorit":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bestwestern_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bestwestern_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
     else:
         return None
 
@@ -295,13 +295,13 @@ if hotel_6:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
     elif hotel_name == "Gastehaus Im Osterholz":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/osterholz_gastehaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Hotel-Restaurant Poseidon":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/poseidon_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/poseidon_hotel.jpg"
     else:
         return None
 
@@ -328,13 +328,13 @@ if hotel_7:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Krauthof":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/krauthof_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/krauthof_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
     else:
         return None
 
@@ -361,13 +361,13 @@ if hotel_8:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Moerike":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/morike_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/morike_hotel.jpg"
     elif hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/krauthof_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/krauthof_hotel.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/cocco_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/cocco_hotel.jpg"
     else:
         return None
 
@@ -393,13 +393,13 @@ if hotel_9:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/cocco_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/cocco_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/westend_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
     else:
         return None
 
@@ -425,13 +425,13 @@ if hotel_10:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/hirschberg_gasthaus.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/hirschberg_gasthaus.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/goldener_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/goldener_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/monrepos_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/monrepos_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
     else:
         return None
 
@@ -457,13 +457,13 @@ if hotel_11:
 ########################################################################################################
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/bergamo_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/bergamo_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/city_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/westend_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/westend_hotel.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "C:/Users/Lenovo/PycharmProjects/pythonProject/MY_LUDW_PROJECT/streamlit_canli/riviera_hotel.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/tree/main/hotels/riviera_hotel.jpg"
     else:
         return None
 
