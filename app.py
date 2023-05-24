@@ -137,7 +137,7 @@ def get_image_path(hotel_name):
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
     elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera.jpg"
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
@@ -192,14 +192,40 @@ if hotel_1:
 ###########################################HOTEL2#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel City Oase Lb":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
-    elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
-    elif hotel_name == "Hotel Bergamo":
+    if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -228,19 +254,40 @@ if hotel_2:
 ###########################################HOTEL3#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-
-    if hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera.jpg"
+    if hotel_name == "Hotel Bergamo":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
-    elif hotel_name == "Hotel Bergamo":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
     elif hotel_name == "Komfort Hotel Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -270,12 +317,38 @@ if hotel_3:
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
     elif hotel_name == "Gastehaus Siebenschlafer":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -302,14 +375,40 @@ if hotel_4:
 ###########################################HOTEL5#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel-Restaurant Poseidon":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
-    elif hotel_name == "Hotel Bergamo":
+    if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
-    elif hotel_name == "Schlosshotel Monrepos":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
     elif hotel_name == "hotelmarchen Garni":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -336,14 +435,40 @@ if hotel_5:
 ###########################################HOTEL6#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
-    elif hotel_name == "Best Western Hotel Favorit":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
-    elif hotel_name == "Hotel Bergamo":
+    if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
     elif hotel_name == "Hotel Goldener Pflug":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -372,14 +497,40 @@ if hotel_6:
 ###########################################HOTEL7#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
-    elif hotel_name == "Gastehaus Im Osterholz":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
-    elif hotel_name == "Hotel Bergamo":
+    if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
     elif hotel_name == "Hotel-Restaurant Poseidon":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -407,14 +558,40 @@ if hotel_7:
 ###########################################HOTEL8#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel Krauthof":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
-    elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
-    elif hotel_name == "Hotel Bergamo":
+    if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
     elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -442,12 +619,38 @@ if hotel_8:
 ###########################################HOTEL9#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel Moerike":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
-    elif hotel_name == "Hotel Bergamo":
+    if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
-    elif hotel_name == "Hotel Krauthof":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
@@ -476,14 +679,40 @@ if hotel_9:
 ###########################################HOTEL10#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Hotel Cocco Bello in der Villa Foret":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
-    elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
-    elif hotel_name == "Westend Hotel":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    if hotel_name == "Hotel Bergamo":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "City Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -510,14 +739,40 @@ if hotel_10:
 ###########################################HOTEL11#######################################################
 ########################################################################################################
 def get_image_path(hotel_name):
-    if hotel_name == "Gasthaus Hirschberg Ludwigsburg":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
-    elif hotel_name == "Hotel Goldener Pflug":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    if hotel_name == "Hotel Bergamo":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
     elif hotel_name == "Schlosshotel Monrepos":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
+    elif hotel_name == "Westend Hotel":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
@@ -546,12 +801,38 @@ if hotel_11:
 def get_image_path(hotel_name):
     if hotel_name == "Hotel Bergamo":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bergamo_hotel.jpg"
+    elif hotel_name == "hotelmarchen Garni":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/garni_hotel.jpg"
+    elif hotel_name == "Hotel Moerike":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/morike_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Hotel City Oase Lb":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/oase_hotel.jpg"
+    elif hotel_name == "Gasthaus Hirschberg Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/hirschberg_gasthaus.jpg"
+    elif hotel_name == "Hotel Riviera":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
     elif hotel_name == "City Hotel Ludwigsburg":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/city_hotel.jpg"
     elif hotel_name == "Westend Hotel":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/westend_hotel.jpg"
-    elif hotel_name == "Hotel Riviera":
-        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/riviera_hotel.jpg"
+    elif hotel_name == "Hotel Goldener Pflug":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/goldener_hotel.jpg"
+    elif hotel_name == "Komfort Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/komfort_hotel.jpg"
+    elif hotel_name == "Gastehaus Siebenschlafer":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/siebenschlafer_gastehaus.jpg"
+    elif hotel_name == "Hotel-Restaurant Poseidon":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/poseidon_hotel.jpg"
+    elif hotel_name == "Schlosshotel Monrepos":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/monrepos_hotel.jpg"
+    elif hotel_name == "Best Western Hotel Favorit":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/bestwestern_hotel.jpg"
+    elif hotel_name == "Gastehaus Im Osterholz":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
+    elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     else:
         return None
 
