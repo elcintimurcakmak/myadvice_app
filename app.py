@@ -160,6 +160,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -229,6 +237,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -292,6 +308,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -354,6 +378,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -415,6 +447,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -476,6 +516,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -539,6 +587,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -601,6 +657,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -663,6 +727,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -724,6 +796,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -785,6 +865,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
@@ -846,6 +934,14 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
     elif hotel_name == "Hotel Krauthof":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
+    elif hotel_name == "Nestor Hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/nestor_hotel.jpg"
+    elif hotel_name == "Boutique-Hotel Kronenstuben":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/kronen_hotel.jpg"
+    elif hotel_name == "Harbr. hotel Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/harbr_hotel.jpg"
+    elif hotel_name == "ibis budget Ludwigsburg":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/ibis_hotel.jpg"
     else:
         return None
 
