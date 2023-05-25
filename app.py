@@ -158,6 +158,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -225,6 +227,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -286,6 +290,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -346,6 +352,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -405,6 +413,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -464,6 +474,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -525,6 +537,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -585,6 +599,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -645,6 +661,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -704,6 +722,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -763,6 +783,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
@@ -822,6 +844,8 @@ def get_image_path(hotel_name):
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/osterholz_gastehaus.jpg"
     elif hotel_name == "Hotel Cocco Bello in der Villa Foret":
         return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/cocco_hotel.jpg"
+    elif hotel_name == "Hotel Krauthof":
+        return "https://github.com/elcintimurcakmak/myadvice_app/raw/main/krauthof_hotel.jpg"
     else:
         return None
 
